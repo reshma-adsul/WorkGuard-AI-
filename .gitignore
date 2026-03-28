@@ -1,0 +1,4 @@
+activity_logs/ 
+__pycache__/ 
+*.enc 
+workguard.db 
