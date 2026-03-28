@@ -1,0 +1,19 @@
+{"type": "screenshot", "time": "2026-03-21T23:01:24.542", "file": "ss_0001_230124.jpg", "window": "Command Prompt - python  main.py"}
+{"type": "screenshot", "time": "2026-03-21T23:01:54.642", "file": "ss_0002_230154.jpg", "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:02.887", "x": 1357, "y": 351}
+{"type": "mouse_move", "time": "2026-03-21T23:02:05.499", "x": 951, "y": 210}
+{"type": "mouse_click", "time": "2026-03-21T23:02:06.246", "button": "left", "x": 948, "y": 165, "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:07.502", "x": 1041, "y": 181}
+{"type": "mouse_click", "time": "2026-03-21T23:02:08.582", "button": "left", "x": 1059, "y": 180, "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:09.794", "x": 1063, "y": 180}
+{"type": "mouse_click", "time": "2026-03-21T23:02:10.982", "button": "left", "x": 1240, "y": 176, "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:12.197", "x": 1243, "y": 176}
+{"type": "mouse_click", "time": "2026-03-21T23:02:13.382", "button": "left", "x": 1387, "y": 177, "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:14.433", "x": 1387, "y": 177}
+{"type": "mouse_click", "time": "2026-03-21T23:02:15.369", "button": "left", "x": 1590, "y": 176, "window": "WorkGuard AI — Enterprise Workspace Security - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "screenshot", "time": "2026-03-21T23:02:24.788", "file": "ss_0003_230224.jpg", "window": "WorkGuard AI — Command Center - Profile 1 - Microsoft​ Edge"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:30.284", "x": 1572, "y": 176}
+{"type": "mouse_move", "time": "2026-03-21T23:02:32.289", "x": 362, "y": 290}
+{"type": "mouse_move", "time": "2026-03-21T23:02:36.382", "x": 429, "y": 486}
+{"type": "mouse_click", "time": "2026-03-21T23:02:38.582", "button": "left", "x": 349, "y": 186, "window": "WorkGuard AI — Command Center - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-21T23:02:39.132", "x": 362, "y": 186}

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorkGuard AI — Enterprise Workspace Security</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:      #0a0c10;
+  --ink-2:    #13161d;
+  --ink-3:    #1c2030;
+  --edge:     #252a38;
+  --silver:   #8892a4;
+  --ghost:    #c8d0de;
+  --white:    #f0f4fa;
+  --gold:     #c8a96e;
+  --gold-2:   #e8c98e;
+  --red:      #e05252;
+  --green:    #4caf82;
+  --blue:     #4a7cf7;
+  --r: 4px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--ink);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* ── Noise texture overlay ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* ── Grid background ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--edge) 1px, transparent 1px),
+    linear-gradient(90deg, var(--edge) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(10,12,16,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--edge);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.nav-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.nav-logo span { color: var(--gold); }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--silver);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--white); }
+
+.nav-cta {
+  padding: 10px 24px;
+  background: var(--gold);
+  color: var(--ink) !important;
+  border-radius: var(--r);
+  font-weight: 600 !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: var(--gold-2) !important; color: var(--ink) !important; }
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 40px 80px;
+  overflow: hidden;
+}
+
+/* Radial glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(200,169,110,0.1);
+  border: 1px solid rgba(200,169,110,0.3);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -3px;
+  margin-bottom: 8px;
+  animation: fadeUp 0.8s 0.1s ease both;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--gold), var(--gold-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 700;
+  color: var(--silver);
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+.hero-desc {
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--silver);
+  font-weight: 300;
+  margin-bottom: 48px;
+  animation: fadeUp 0.8s 0.3s ease both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background: var(--gold);
+  color: var(--ink);
+  border: none;
+  border-radius: var(--r);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background: var(--gold-2);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(200,169,110,0.3);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--edge);
+  border-radius: var(--r);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  border-color: var(--silver);
+  transform: translateY(-1px);
+}
+
+/* ── STATS BAR ── */
+.stats-bar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+  background: var(--ink-2);
+  padding: 0;
+  animation: fadeUp 0.8s 0.5s ease both;
+}
+
+.stat-item {
+  padding: 28px 48px;
+  border-right: 1px solid var(--edge);
+  text-align: center;
+  flex: 1;
+  max-width: 220px;
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--silver);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ── FEATURES ── */
+.section {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: var(--silver);
+  font-weight: 300;
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 64px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--edge);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.feature-card {
+  background: var(--ink-2);
+  padding: 36px 32px;
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.feature-card:hover { background: var(--ink-3); }
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(200,169,110,0.1);
+  border: 1px solid rgba(200,169,110,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: var(--silver);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* ── HOW IT WORKS ── */
+.how-section {
+  position: relative;
+  z-index: 1;
+  background: var(--ink-2);
+  border-top: 1px solid var(--edge);
+  border-bottom: 1px solid var(--edge);
+}
+
+.how-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 64px;
+}
+
+.flow-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 16px;
+}
+
+.flow-step::after {
+  content: '→';
+  position: absolute;
+  top: 28px;
+  right: -12px;
+  font-size: 20px;
+  color: var(--edge);
+}
+
+.flow-step:last-child::after { display: none; }
+
+.flow-num {
+  width: 56px;
+  height: 56px;
+  background: var(--ink);
+  border: 1px solid var(--edge);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gold);
+  margin: 0 auto 20px;
+}
+
+.flow-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.flow-desc {
+  font-size: 13px;
+  color: var(--silver);
+  line-height: 1.6;
+}
+
+/* ── ML SECTION ── */
+.ml-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.ml-card {
+  background: var(--ink-2);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ml-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.ml-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.ml-card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.ml-card-desc {
+  font-size: 14px;
+  color: var(--silver);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.ml-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ml-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ghost);
+}
+
+.ml-feature::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── TECH STACK ── */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.tech-tag {
+  padding: 10px 20px;
+  background: var(--ink-2);
+  border: 1px solid var(--edge);
+  border-radius: var(--r);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ghost);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.tech-tag:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(200,169,110,0.05);
+}
+
+/* ── ALERT DEMO ── */
+.alert-demo {
+  background: var(--ink-2);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 48px;
+  font-family: 'DM Mono', 'Courier New', monospace;
+}
+
+.alert-demo-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--edge);
+}
+
+.alert-dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot-red { background: #e05252; }
+.dot-yellow { background: #f0c040; }
+.dot-green { background: #4caf82; }
+
+.alert-line {
+  font-size: 13px;
+  line-height: 2;
+  color: var(--silver);
+}
+
+.alert-line .cmd { color: var(--gold); }
+.alert-line .success { color: var(--green); }
+.alert-line .danger { color: var(--red); }
+.alert-line .info { color: var(--blue); }
+
+/* ── CTA ── */
+.cta-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 120px 40px;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200,169,110,0.06) 0%, transparent 70%);
+}
+
+.cta-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.cta-desc {
+  font-size: 17px;
+  color: var(--silver);
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* ── FOOTER ── */
+footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--edge);
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--ink-2);
+}
+
+.footer-left {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-left span { color: var(--gold); }
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--silver);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--white); }
+
+.footer-right {
+  font-size: 13px;
+  color: var(--silver);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 16px 24px; }
+  .nav-links { display: none; }
+  .features-grid { grid-template-columns: 1fr; }
+  .ml-grid { grid-template-columns: 1fr; }
+  .flow-steps { flex-direction: column; }
+  .flow-step::after { display: none; }
+  .stat-item { padding: 20px 24px; }
+  .stats-bar { flex-wrap: wrap; }
+  footer { flex-direction: column; gap: 16px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">🛡️</div>
+    Work<span>Guard</span> AI
+  </div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#ml">ML Engine</a></li>
+    <li><a href="#tech">Tech Stack</a></li>
+    <li><a href="http://127.0.0.1:5000/dashboard" class="nav-cta">Launch Dashboard →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    AI-Powered Workspace Security
+  </div>
+  <h1>Work<span>Guard</span></h1>
+  <div class="hero-sub">Knows who's typing.</div>
+  <p class="hero-desc">
+    Behavioral biometrics + machine learning that silently learns your typing fingerprint. 
+    The moment someone else touches your keyboard — it knows.
+  </p>
+  <div class="hero-actions">
+    <a href="http://127.0.0.1:5000/dashboard" class="btn-primary">Launch Dashboard →</a>
+    <a href="https://github.com/reshma-adsul/WorkGuard-AI-" class="btn-secondary">View on GitHub</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">9</div>
+    <div class="stat-label">Behavioral Features</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">2</div>
+    <div class="stat-label">ML Models (Ensemble)</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Camera States</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">256</div>
+    <div class="stat-label">Bit AES Encryption</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">8</div>
+    <div class="stat-label">REST API Endpoints</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-label">Capabilities</div>
+  <h2 class="section-title">Enterprise-grade<br>security. Zero friction.</h2>
+  <p class="section-desc">Six layers of intelligent monitoring that work silently in the background — no configuration required.</p>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">⌨️</div>
+      <div class="feature-title">Keystroke Dynamics</div>
+      <p class="feature-desc">Captures dwell time and flight time with millisecond precision. Every person's typing rhythm is as unique as a fingerprint.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🧬</div>
+      <div class="feature-title">Biometric Fingerprinting</div>
+      <p class="feature-desc">Z-score similarity scoring builds an immutable behavioral profile. Threshold 0.65 separates owner from intruder.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-title">ML Anomaly Detection</div>
+      <p class="feature-desc">Isolation Forest + One-Class SVM ensemble. Unsupervised learning — no labeled attack data needed.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">📷</div>
+      <div class="feature-title">Camera Surveillance</div>
+      <p class="feature-desc">OpenCV-powered 3-state FSM: Owner Present → No One → Stranger. Smoothing buffer prevents false alerts.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔐</div>
+      <div class="feature-title">AES-256-GCM Encryption</div>
+      <p class="feature-desc">Every log chunk encrypted with a unique 96-bit nonce. GCM authentication tag detects tampered files.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">📱</div>
+      <div class="feature-title">Instant Telegram Alerts</div>
+      <p class="feature-desc">Real-time threat notifications with screenshot evidence delivered to your phone the moment anomaly is detected.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how">
+  <div class="how-inner">
+    <div class="section-label">Process</div>
+    <h2 class="section-title">From keystroke to alert<br>in milliseconds.</h2>
+
+    <div class="flow-steps">
+      <div class="flow-step reveal">
+        <div class="flow-num">01</div>
+        <div class="flow-title">Capture</div>
+        <p class="flow-desc">pynput hooks capture every keystroke at OS level — across all applications</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">02</div>
+        <div class="flow-title">Extract</div>
+        <p class="flow-desc">9-dimensional feature vectors extracted: dwell, flight, KPM, click rate, hour-of-day...</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">03</div>
+        <div class="flow-title">Analyze</div>
+        <p class="flow-desc">Ensemble ML model scores behavioral similarity against stored profile</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">04</div>
+        <div class="flow-title">Evidence</div>
+        <p class="flow-desc">Screenshot + webcam photo captured as tamper-proof evidence</p>
+      </div>
+      <div class="flow-step reveal">
+        <div class="flow-num">05</div>
+        <div class="flow-title">Alert</div>
+        <p class="flow-desc">Telegram message with screenshot delivered instantly to your phone</p>
+      </div>
+    </div>
+
+    <!-- Terminal demo -->
+    <div class="alert-demo reveal" style="margin-top:64px">
+      <div class="alert-demo-header">
+        <div class="alert-dot dot-red"></div>
+        <div class="alert-dot dot-yellow"></div>
+        <div class="alert-dot dot-green"></div>
+        <span style="font-size:12px;color:var(--silver);margin-left:8px">workguard_ai — python main.py</span>
+      </div>
+      <div class="alert-line"><span class="cmd">✓</span> All dependencies ready</div>
+      <div class="alert-line"><span class="success">✓</span> Owner face profile loaded</div>
+      <div class="alert-line"><span class="success">✓</span> Biometric profile loaded — dwell: 94ms | flight: 112ms | WPM: 68</div>
+      <div class="alert-line"><span class="success">✓</span> Isolation Forest model ready — 47 baseline samples</div>
+      <div class="alert-line"><span class="info">🌐</span> Dashboard API: http://127.0.0.1:5000</div>
+      <div class="alert-line"><span class="success">✅</span> WorkGuard AI is ACTIVE — Press Ctrl+C to stop</div>
+      <div class="alert-line" style="margin-top:12px"><span class="danger">🔴</span> <span class="danger">STRANGER DETECTED — Camera state: NO_ONE → STRANGER</span></div>
+      <div class="alert-line"><span class="danger">⚠️</span> Anomaly score: 0.847 — Biometric match: 23%</div>
+      <div class="alert-line"><span class="info">📸</span> Screenshot captured: intruder_143022.jpg</div>
+      <div class="alert-line"><span class="info">📱</span> Telegram alert sent: UNAUTHORIZED PERSON DETECTED</div>
+    </div>
+  </div>
+</section>
+
+<!-- ML ENGINE -->
+<section class="section" id="ml">
+  <div class="section-label">Intelligence</div>
+  <h2 class="section-title">Dual-model ensemble.<br>High confidence detection.</h2>
+  <p class="section-desc">Two independent ML models vote on every behavioral window. Consensus required for high-confidence alerts.</p>
+
+  <div class="ml-grid">
+    <div class="ml-card reveal">
+      <div class="ml-card-label">Model 1</div>
+      <div class="ml-card-title">Isolation Forest</div>
+      <p class="ml-card-desc">Unsupervised anomaly detection that isolates outliers using random decision trees. Optimal for large behavioral datasets.</p>
+      <div class="ml-features">
+        <div class="ml-feature">O(n log n) complexity — real-time capable</div>
+        <div class="ml-feature">Contamination rate: 5% (tunable)</div>
+        <div class="ml-feature">100 estimators, random_state=42</div>
+        <div class="ml-feature">StandardScaler normalization</div>
+      </div>
+    </div>
+    <div class="ml-card reveal">
+      <div class="ml-card-label">Model 2</div>
+      <div class="ml-card-title">One-Class SVM</div>
+      <p class="ml-card-desc">Learns a tight decision boundary around normal behavior using RBF kernel. Superior precision on small datasets.</p>
+      <div class="ml-features">
+        <div class="ml-feature">RBF kernel — handles non-linear patterns</div>
+        <div class="ml-feature">nu=0.05, gamma='scale'</div>
+        <div class="ml-feature">Ensemble with IsolationForest</div>
+        <div class="ml-feature">Unanimous vote = high confidence alert</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="section" id="tech" style="padding-top:0">
+  <div class="section-label">Built With</div>
+  <h2 class="section-title">Production-grade<br>technology stack.</h2>
+
+  <div class="tech-grid">
+    <div class="tech-tag">🐍 Python 3.8+</div>
+    <div class="tech-tag">🤖 scikit-learn</div>
+    <div class="tech-tag">📷 OpenCV</div>
+    <div class="tech-tag">🌐 Flask + flask-cors</div>
+    <div class="tech-tag">🔐 AES-256-GCM</div>
+    <div class="tech-tag">💾 SQLite</div>
+    <div class="tech-tag">📊 Chart.js</div>
+    <div class="tech-tag">📱 Telegram Bot API</div>
+    <div class="tech-tag">⌨️ pynput</div>
+    <div class="tech-tag">🖼️ PIL ImageGrab</div>
+    <div class="tech-tag">🪟 win32gui + psutil</div>
+    <div class="tech-tag">🔢 NumPy</div>
+    <div class="tech-tag">📡 SSE (Server-Sent Events)</div>
+    <div class="tech-tag">🔑 winreg (Auto-start)</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-title">Your laptop.<br><span style="color:var(--gold)">Always protected.</span></h2>
+  <p class="cta-desc">Start monitoring in under 60 seconds.</p>
+  <div style="display:flex;gap:16px;justify-content:center">
+    <a href="https://github.com/reshma-adsul/WorkGuard-AI-" class="btn-primary">View on GitHub →</a>
+    <a href="http://127.0.0.1:5000/dashboard" class="btn-secondary">Launch Dashboard</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">Work<span>Guard</span> AI</div>
+  <div class="footer-links">
+    <a href="https://github.com/reshma-adsul/WorkGuard-AI-">GitHub</a>
+    <a href="https://www.linkedin.com/in/reshma-adsul-744108344">LinkedIn</a>
+    <a href="http://127.0.0.1:5000/dashboard">Dashboard</a>
+  </div>
+  <div class="footer-right">Built by Reshma Disha Adsul</div>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Animated counter
+function animateCounter(el, target) {
+  let current = 0;
+  const step  = target / 40;
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) { current = target; clearInterval(timer); }
+    el.textContent = Math.floor(current);
+  }, 30);
+}
+
+const statsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.stat-num').forEach(el => {
+        animateCounter(el, parseInt(el.textContent));
+      });
+      statsObserver.disconnect();
+    }
+  });
+});
+statsObserver.observe(document.querySelector('.stats-bar'));
+</script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+{"type": "screenshot", "time": "2026-03-19T23:17:13.630", "file": "ss_0001_231713.jpg", "window": "Command Prompt - python  main.py"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:29.631", "x": 1027, "y": 860}
+{"type": "mouse_click", "time": "2026-03-19T23:17:30.580", "button": "left", "x": 686, "y": 1042, "window": "404 Not Found and 8 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:17:31.702", "button": "left", "x": 858, "y": 917, "window": "", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:32.324", "x": 854, "y": 911}
+{"type": "mouse_click", "time": "2026-03-19T23:17:33.750", "button": "left", "x": 53, "y": 88, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:34.330", "x": 129, "y": 122}
+{"type": "mouse_move", "time": "2026-03-19T23:17:37.417", "x": 594, "y": 534}
+{"type": "mouse_click", "time": "2026-03-19T23:17:38.346", "button": "left", "x": 698, "y": 404, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:17:38.581", "button": "left", "x": 698, "y": 404, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:39.639", "x": 692, "y": 401}
+{"type": "mouse_click", "time": "2026-03-19T23:17:40.906", "button": "left", "x": 54, "y": 101, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:41.645", "x": 388, "y": 281}
+{"type": "screenshot", "time": "2026-03-19T23:17:43.768", "file": "ss_0002_231743.jpg", "window": "WORKGUARDAI - File Explorer"}
+{"type": "mouse_move", "time": "2026-03-19T23:17:45.994", "x": 450, "y": 510}
+{"type": "mouse_click", "time": "2026-03-19T23:17:46.527", "button": "left", "x": 450, "y": 524, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:17:46.765", "button": "left", "x": 450, "y": 524, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "screenshot", "time": "2026-03-19T23:18:13.909", "file": "ss_0003_231813.jpg", "window": "main.py - Visual Studio Code"}
+{"type": "screenshot", "time": "2026-03-19T23:18:43.982", "file": "ss_0004_231843.jpg", "window": "main.py - Visual Studio Code"}
+{"type": "screenshot", "time": "2026-03-19T23:19:14.068", "file": "ss_0005_231913.jpg", "window": "main.py - Visual Studio Code"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:17.379", "x": 455, "y": 522}
+{"type": "mouse_move", "time": "2026-03-19T23:19:19.380", "x": 1891, "y": 764}
+{"type": "mouse_click", "time": "2026-03-19T23:19:20.095", "button": "left", "x": 1912, "y": 764, "window": "main.py - Visual Studio Code", "process": "Code.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:22.092", "x": 1897, "y": 146}
+{"type": "mouse_move", "time": "2026-03-19T23:19:30.624", "x": 1198, "y": 388}
+{"type": "mouse_click", "time": "2026-03-19T23:19:32.512", "button": "left", "x": 244, "y": 88, "window": "main.py - Visual Studio Code", "process": "Code.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:33.883", "x": 277, "y": 89}
+{"type": "mouse_click", "time": "2026-03-19T23:19:35.392", "button": "left", "x": 1882, "y": 39, "window": "Visual Studio Code", "process": "Code.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:36.180", "x": 1865, "y": 46}
+{"type": "mouse_move", "time": "2026-03-19T23:19:38.909", "x": 427, "y": 319}
+{"type": "mouse_move", "time": "2026-03-19T23:19:42.314", "x": 403, "y": 472}
+{"type": "mouse_click", "time": "2026-03-19T23:19:43.401", "button": "left", "x": 409, "y": 400, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:19:43.641", "button": "left", "x": 409, "y": 400, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "screenshot", "time": "2026-03-19T23:19:44.131", "file": "ss_0006_231944.jpg", "window": "dashboard - File Explorer"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:44.922", "x": 402, "y": 393}
+{"type": "mouse_click", "time": "2026-03-19T23:19:46.400", "button": "left", "x": 375, "y": 268, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:19:46.658", "button": "left", "x": 375, "y": 268, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:47.336", "x": 383, "y": 272}
+{"type": "mouse_move", "time": "2026-03-19T23:19:49.507", "x": 590, "y": 540}
+{"type": "mouse_move", "time": "2026-03-19T23:19:51.507", "x": 141, "y": 154}
+{"type": "mouse_move", "time": "2026-03-19T23:19:53.508", "x": 1873, "y": 58}
+{"type": "mouse_move", "time": "2026-03-19T23:19:56.358", "x": 689, "y": 1053}
+{"type": "mouse_click", "time": "2026-03-19T23:19:56.870", "button": "left", "x": 854, "y": 909, "window": "WorkGuard AI — Enterprise Workspace Security and 9 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:19:57.839", "button": "left", "x": 854, "y": 909, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:19:58.939", "x": 75, "y": 208}
+{"type": "mouse_click", "time": "2026-03-19T23:19:59.731", "button": "left", "x": 46, "y": 102, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:01.461", "x": 482, "y": 536}
+{"type": "mouse_click", "time": "2026-03-19T23:20:02.686", "button": "left", "x": 567, "y": 501, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:02.923", "button": "left", "x": 567, "y": 501, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:04.186", "x": 585, "y": 492}
+{"type": "mouse_move", "time": "2026-03-19T23:20:06.858", "x": 701, "y": 1022}
+{"type": "mouse_click", "time": "2026-03-19T23:20:07.218", "button": "left", "x": 877, "y": 886, "window": "WorkGuard AI — Enterprise Workspace Security and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:09.743", "button": "right", "x": 957, "y": 489, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:10.796", "x": 960, "y": 483}
+{"type": "mouse_click", "time": "2026-03-19T23:20:12.055", "button": "left", "x": 1396, "y": 172, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:12.940", "x": 1383, "y": 177}
+{"type": "mouse_click", "time": "2026-03-19T23:20:14.169", "button": "left", "x": 472, "y": 407, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "screenshot", "time": "2026-03-19T23:20:14.202", "file": "ss_0007_232014.jpg", "window": "WORKGUARDAI - File Explorer"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:14.406", "button": "left", "x": 472, "y": 407, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:15.566", "x": 485, "y": 407}
+{"type": "mouse_move", "time": "2026-03-19T23:20:17.572", "x": 1281, "y": 840}
+{"type": "mouse_click", "time": "2026-03-19T23:20:18.279", "button": "left", "x": 1338, "y": 1046, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:22.569", "x": 1124, "y": 931}
+{"type": "mouse_click", "time": "2026-03-19T23:20:24.106", "button": "left", "x": 613, "y": 1026, "window": "Command Prompt - python  main.py", "process": "WindowsTerminal.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:24.672", "x": 600, "y": 1019}
+{"type": "mouse_click", "time": "2026-03-19T23:20:26.576", "button": "left", "x": 79, "y": 624, "window": "WorkGuard AI — Enterprise Workspace Security and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:27.141", "x": 87, "y": 612}
+{"type": "mouse_click", "time": "2026-03-19T23:20:28.962", "button": "left", "x": 89, "y": 88, "window": "404 Not Found and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:29.542", "x": 100, "y": 90}
+{"type": "mouse_move", "time": "2026-03-19T23:20:31.552", "x": 99, "y": 99}
+{"type": "mouse_click", "time": "2026-03-19T23:20:32.015", "button": "left", "x": 96, "y": 90, "window": "404 Not Found and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:33.557", "x": 622, "y": 745}
+{"type": "mouse_click", "time": "2026-03-19T23:20:35.359", "button": "left", "x": 854, "y": 876, "window": "404 Not Found and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:35.939", "x": 843, "y": 862}
+{"type": "mouse_click", "time": "2026-03-19T23:20:37.296", "button": "left", "x": 60, "y": 107, "window": "dashboard - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:37.940", "x": 483, "y": 370}
+{"type": "mouse_move", "time": "2026-03-19T23:20:39.946", "x": 486, "y": 419}
+{"type": "mouse_click", "time": "2026-03-19T23:20:42.191", "button": "left", "x": 492, "y": 292, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:42.470", "button": "left", "x": 492, "y": 292, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:43.617", "x": 491, "y": 292}
+{"type": "screenshot", "time": "2026-03-19T23:20:44.288", "file": "ss_0008_232044.jpg", "window": "activity_logs - File Explorer"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:44.787", "button": "left", "x": 39, "y": 100, "window": "activity_logs - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:45.623", "x": 262, "y": 315}
+{"type": "mouse_click", "time": "2026-03-19T23:20:46.274", "button": "left", "x": 313, "y": 344, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:46.538", "button": "left", "x": 313, "y": 344, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:47.844", "x": 310, "y": 342}
+{"type": "mouse_click", "time": "2026-03-19T23:20:48.806", "button": "left", "x": 40, "y": 100, "window": "api - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:49.851", "x": 337, "y": 381}
+{"type": "mouse_click", "time": "2026-03-19T23:20:51.048", "button": "left", "x": 359, "y": 430, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:51.288", "button": "left", "x": 359, "y": 430, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:52.397", "x": 356, "y": 425}
+{"type": "mouse_click", "time": "2026-03-19T23:20:53.705", "button": "left", "x": 57, "y": 101, "window": "database - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:20:54.402", "x": 268, "y": 207}
+{"type": "mouse_click", "time": "2026-03-19T23:20:55.546", "button": "left", "x": 385, "y": 302, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:55.786", "button": "left", "x": 385, "y": 302, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:56.951", "button": "left", "x": 385, "y": 302, "window": "activity_logs - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:20:57.188", "button": "left", "x": 385, "y": 302, "window": "activity_logs - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:00.104", "x": 383, "y": 302}
+{"type": "mouse_click", "time": "2026-03-19T23:21:01.523", "button": "left", "x": 50, "y": 89, "window": "20260319_231713 - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:21:02.464", "button": "left", "x": 50, "y": 89, "window": "activity_logs - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:03.190", "x": 57, "y": 91}
+{"type": "mouse_move", "time": "2026-03-19T23:21:05.701", "x": 434, "y": 475}
+{"type": "mouse_click", "time": "2026-03-19T23:21:07.307", "button": "left", "x": 475, "y": 473, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_click", "time": "2026-03-19T23:21:07.537", "button": "left", "x": 475, "y": 473, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:09.001", "x": 475, "y": 473}
+{"type": "mouse_click", "time": "2026-03-19T23:21:10.523", "button": "left", "x": 57, "y": 104, "window": "ml - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:11.027", "x": 68, "y": 110}
+{"type": "mouse_move", "time": "2026-03-19T23:21:13.160", "x": 410, "y": 555}
+{"type": "screenshot", "time": "2026-03-19T23:21:14.374", "file": "ss_0009_232114.jpg", "window": "WORKGUARDAI - File Explorer"}
+{"type": "mouse_click", "time": "2026-03-19T23:21:15.235", "button": "left", "x": 622, "y": 1046, "window": "WORKGUARDAI - File Explorer", "process": "explorer.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:15.946", "x": 622, "y": 1045}
+{"type": "mouse_click", "time": "2026-03-19T23:21:18.175", "button": "left", "x": 86, "y": 509, "window": "404 Not Found and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:18.638", "x": 99, "y": 509}
+{"type": "mouse_move", "time": "2026-03-19T23:21:31.429", "x": 749, "y": 664}
+{"type": "mouse_move", "time": "2026-03-19T23:21:33.773", "x": 281, "y": 747}
+{"type": "mouse_move", "time": "2026-03-19T23:21:37.482", "x": 993, "y": 350}
+{"type": "mouse_move", "time": "2026-03-19T23:21:39.487", "x": 210, "y": 306}
+{"type": "mouse_move", "time": "2026-03-19T23:21:41.495", "x": 209, "y": 257}
+{"type": "mouse_move", "time": "2026-03-19T23:21:43.840", "x": 231, "y": 360}
+{"type": "screenshot", "time": "2026-03-19T23:21:44.454", "file": "ss_0010_232144.jpg", "window": "UI Improvement Suggestions and 10 more pages - Profile 1 - Microsoft​ Edge"}
+{"type": "mouse_click", "time": "2026-03-19T23:21:44.684", "button": "left", "x": 239, "y": 228, "window": "UI Improvement Suggestions and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:46.649", "x": 830, "y": 518}
+{"type": "mouse_click", "time": "2026-03-19T23:21:47.811", "button": "left", "x": 692, "y": 521, "window": "ChatGPT and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:48.654", "x": 711, "y": 538}
+{"type": "mouse_move", "time": "2026-03-19T23:21:50.656", "x": 1088, "y": 569}
+{"type": "mouse_click", "time": "2026-03-19T23:21:52.706", "button": "left", "x": 1158, "y": 512, "window": "ChatGPT and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:54.650", "x": 1144, "y": 512}
+{"type": "mouse_click", "time": "2026-03-19T23:21:55.749", "button": "left", "x": 29, "y": 179, "window": "ChatGPT and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:57.008", "x": 386, "y": 543}
+{"type": "mouse_click", "time": "2026-03-19T23:21:58.122", "button": "left", "x": 111, "y": 224, "window": "Making a project - Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:21:59.810", "x": 129, "y": 225}
+{"type": "mouse_click", "time": "2026-03-19T23:22:01.775", "button": "left", "x": 1229, "y": 311, "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:02.488", "x": 1226, "y": 314}
+{"type": "mouse_click", "time": "2026-03-19T23:22:03.250", "button": "left", "x": 976, "y": 553, "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:05.794", "x": 969, "y": 555}
+{"type": "mouse_click", "time": "2026-03-19T23:22:06.883", "button": "left", "x": 574, "y": 647, "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:07.801", "x": 698, "y": 447}
+{"type": "mouse_click", "time": "2026-03-19T23:22:08.597", "button": "left", "x": 773, "y": 343, "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:10.056", "x": 770, "y": 343}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.388", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.395", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.402", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.409", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.416", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.423", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.430", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.440", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.444", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.451", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.458", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.466", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.472", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.496", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.501", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.507", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.514", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.521", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.528", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.535", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.542", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.550", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.557", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.581", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.585", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.591", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.598", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.605", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.612", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.619", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.626", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.633", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.640", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.648", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.655", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.662", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.669", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.683", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.698", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:12.711", "direction": "down", "x": 546, "y": 505}
+{"type": "mouse_move", "time": "2026-03-19T23:22:13.258", "x": 546, "y": 502}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.891", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.897", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.903", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.911", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.918", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.925", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.933", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.939", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.947", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.953", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.959", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.967", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.973", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.981", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.988", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:13.995", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.001", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.009", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.016", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.023", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.031", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.037", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.044", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.051", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.066", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.080", "direction": "down", "x": 629, "y": 314}
+{"type": "mouse_scroll", "time": "2026-03-19T23:22:14.116", "direction": "down", "x": 629, "y": 314}
+{"type": "screenshot", "time": "2026-03-19T23:22:14.539", "file": "ss_0011_232214.jpg", "window": "Open"}
+{"type": "mouse_click", "time": "2026-03-19T23:22:14.684", "button": "left", "x": 629, "y": 314, "window": "Open", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:15.375", "x": 632, "y": 321}
+{"type": "mouse_click", "time": "2026-03-19T23:22:16.255", "button": "left", "x": 695, "y": 659, "window": "Open", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:17.376", "x": 788, "y": 709}
+{"type": "mouse_click", "time": "2026-03-19T23:22:18.089", "button": "left", "x": 724, "y": 786, "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "keystroke", "time": "2026-03-19T23:22:19.178", "key": "b", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": null, "dwell_ms": 1}
+{"type": "keystroke", "time": "2026-03-19T23:22:19.319", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 139, "dwell_ms": 67}
+{"type": "keystroke", "time": "2026-03-19T23:22:19.389", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 71, "dwell_ms": 75}
+{"type": "keystroke", "time": "2026-03-19T23:22:19.561", "key": "i", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 171, "dwell_ms": 63}
+{"type": "keystroke", "time": "2026-03-19T23:22:19.813", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 252, "dwell_ms": 56}
+{"type": "keystroke", "time": "2026-03-19T23:22:20.446", "key": "y", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 632, "dwell_ms": 71}
+{"type": "keystroke", "time": "2026-03-19T23:22:20.549", "key": "e", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 103, "dwell_ms": 72}
+{"type": "keystroke", "time": "2026-03-19T23:22:21.329", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 779, "dwell_ms": 27}
+{"type": "keystroke", "time": "2026-03-19T23:22:22.038", "key": "l", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 708, "dwell_ms": 72}
+{"type": "keystroke", "time": "2026-03-19T23:22:22.129", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 91, "dwell_ms": 84}
+{"type": "keystroke", "time": "2026-03-19T23:22:22.374", "key": "n", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 244, "dwell_ms": 52}
+{"type": "keystroke", "time": "2026-03-19T23:22:22.705", "key": "d", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 331, "dwell_ms": 83}
+{"type": "keystroke", "time": "2026-03-19T23:22:22.990", "key": "i", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 284, "dwell_ms": 39}
+{"type": "keystroke", "time": "2026-03-19T23:22:23.422", "key": "n", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 432, "dwell_ms": 63}
+{"type": "keystroke", "time": "2026-03-19T23:22:23.922", "key": "g", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 499, "dwell_ms": 100}
+{"type": "keystroke", "time": "2026-03-19T23:22:24.092", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 170, "dwell_ms": 52}
+{"type": "keystroke", "time": "2026-03-19T23:22:24.562", "key": "p", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 469, "dwell_ms": 71}
+{"type": "keystroke", "time": "2026-03-19T23:22:25.006", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 443, "dwell_ms": 92}
+{"type": "keystroke", "time": "2026-03-19T23:22:25.389", "key": "g", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 383, "dwell_ms": 132}
+{"type": "keystroke", "time": "2026-03-19T23:22:25.417", "key": "e", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 27, "dwell_ms": 32}
+{"type": "keystroke", "time": "2026-03-19T23:22:26.621", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 1204, "dwell_ms": 35}
+{"type": "keystroke", "time": "2026-03-19T23:22:27.198", "key": "c", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 576, "dwell_ms": 55}
+{"type": "keystroke", "time": "2026-03-19T23:22:27.482", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 284, "dwell_ms": 143}
+{"type": "keystroke", "time": "2026-03-19T23:22:27.545", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 63, "dwell_ms": 4}
+{"type": "keystroke", "time": "2026-03-19T23:22:27.680", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 135, "dwell_ms": 56}
+{"type": "keystroke", "time": "2026-03-19T23:22:27.937", "key": "i", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 256, "dwell_ms": 68}
+{"type": "keystroke", "time": "2026-03-19T23:22:28.253", "key": "y", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 315, "dwell_ms": 80}
+{"type": "keystroke", "time": "2026-03-19T23:22:28.373", "key": "e", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 120, "dwell_ms": 88}
+{"type": "keystroke", "time": "2026-03-19T23:22:28.882", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 508, "dwell_ms": 83}
+{"type": "keystroke", "time": "2026-03-19T23:22:29.133", "key": "b", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 251, "dwell_ms": 63}
+{"type": "keystroke", "time": "2026-03-19T23:22:29.361", "key": "u", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 227, "dwell_ms": 81}
+{"type": "keystroke", "time": "2026-03-19T23:22:29.645", "key": "t", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 284, "dwell_ms": 76}
+{"type": "keystroke", "time": "2026-03-19T23:22:29.969", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 323, "dwell_ms": 39}
+{"type": "keystroke", "time": "2026-03-19T23:22:30.145", "key": "n", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 176, "dwell_ms": 76}
+{"type": "keystroke", "time": "2026-03-19T23:22:30.249", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 103, "dwell_ms": 72}
+{"type": "keystroke", "time": "2026-03-19T23:22:30.385", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 135, "dwell_ms": 36}
+{"type": "keystroke", "time": "2026-03-19T23:22:31.673", "key": "c", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 1288, "dwell_ms": 67}
+{"type": "keystroke", "time": "2026-03-19T23:22:32.117", "key": "m", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 443, "dwell_ms": 79}
+{"type": "keystroke", "time": "2026-03-19T23:22:32.570", "key": "d", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 452, "dwell_ms": 63}
+{"type": "keystroke", "time": "2026-03-19T23:22:32.741", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 170, "dwell_ms": 60}
+{"type": "keystroke", "time": "2026-03-19T23:22:33.417", "key": "m", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 676, "dwell_ms": 56}
+{"type": "keystroke", "time": "2026-03-19T23:22:33.510", "key": "e", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 92, "dwell_start": 1773942753.510111}
+{"type": "keystroke", "time": "2026-03-19T23:22:33.720", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 210, "dwell_ms": 31}
+{"type": "keystroke", "time": "2026-03-19T23:22:38.974", "key": "c", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 5253, "dwell_ms": 82}
+{"type": "keystroke", "time": "2026-03-19T23:22:39.265", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 291, "dwell_ms": 72}
+{"type": "keystroke", "time": "2026-03-19T23:22:39.377", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 112, "dwell_ms": 99}
+{"type": "keystroke", "time": "2026-03-19T23:22:39.757", "key": "l", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 380, "dwell_ms": 95}
+{"type": "keystroke", "time": "2026-03-19T23:22:39.877", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 120, "dwell_ms": 60}
+{"type": "keystroke", "time": "2026-03-19T23:22:40.246", "key": "n", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 368, "dwell_ms": 83}
+{"type": "keystroke", "time": "2026-03-19T23:22:40.401", "key": "e", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 155, "dwell_ms": 80}
+{"type": "keystroke", "time": "2026-03-19T23:22:40.533", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 131, "dwell_ms": 64}
+{"type": "keystroke", "time": "2026-03-19T23:22:40.894", "key": "j", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 360, "dwell_ms": 167}
+{"type": "keystroke", "time": "2026-03-19T23:22:40.973", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 79, "dwell_ms": 7}
+{"type": "keystroke", "time": "2026-03-19T23:22:41.160", "key": "u", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 186, "dwell_ms": 64}
+{"type": "keystroke", "time": "2026-03-19T23:22:41.453", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 293, "dwell_ms": 75}
+{"type": "keystroke", "time": "2026-03-19T23:22:41.801", "key": "t", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 348, "dwell_ms": 83}
+{"type": "keystroke", "time": "2026-03-19T23:22:42.013", "key": "o", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 211, "dwell_ms": 64}
+{"type": "keystroke", "time": "2026-03-19T23:22:42.369", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 356, "dwell_ms": 44}
+{"type": "keystroke", "time": "2026-03-19T23:22:42.576", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 207, "dwell_ms": 72}
+{"type": "keystroke", "time": "2026-03-19T23:22:42.785", "key": "n", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 208, "dwell_ms": 104}
+{"type": "keystroke", "time": "2026-03-19T23:22:43.030", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 244, "dwell_ms": 52}
+{"type": "keystroke", "time": "2026-03-19T23:22:43.221", "key": "i", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 190, "dwell_ms": 56}
+{"type": "keystroke", "time": "2026-03-19T23:22:43.481", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 260, "dwell_ms": 35}
+{"type": "keystroke", "time": "2026-03-19T23:22:43.704", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 223, "dwell_ms": 39}
+{"type": "keystroke", "time": "2026-03-19T23:22:43.946", "key": "o", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 241, "dwell_ms": 51}
+{"type": "screenshot", "time": "2026-03-19T23:22:44.623", "file": "ss_0012_232244.jpg", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge"}
+{"type": "keystroke", "time": "2026-03-19T23:22:44.714", "key": "[SPACE]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 767, "dwell_ms": 67}
+{"type": "keystroke", "time": "2026-03-19T23:22:44.838", "key": "r", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 124, "dwell_ms": 51}
+{"type": "keystroke", "time": "2026-03-19T23:22:45.746", "key": "h", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 907, "dwell_ms": 59}
+{"type": "keystroke", "time": "2026-03-19T23:22:45.837", "key": "a", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 91, "dwell_ms": 95}
+{"type": "keystroke", "time": "2026-03-19T23:22:46.853", "key": "[ENTER]", "window": "Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe", "flight_ms": 1015, "dwell_ms": 51}
+{"type": "mouse_move", "time": "2026-03-19T23:22:49.302", "x": 733, "y": 775}
+{"type": "mouse_click", "time": "2026-03-19T23:22:50.755", "button": "left", "x": 1212, "y": 297, "window": "Landing page command line issue - Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:22:51.978", "x": 1212, "y": 306}
+{"type": "mouse_click", "time": "2026-03-19T23:22:53.908", "button": "left", "x": 1534, "y": 924, "window": "Landing page command line issue - Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}
+{"type": "mouse_move", "time": "2026-03-19T23:23:00.513", "x": 1540, "y": 917}
+{"type": "mouse_move", "time": "2026-03-19T23:23:02.519", "x": 1895, "y": 62}
+{"type": "mouse_click", "time": "2026-03-19T23:23:03.205", "button": "left", "x": 1889, "y": 34, "window": "Landing page command line issue - Claude and 10 more pages - Profile 1 - Microsoft​ Edge", "process": "msedge.exe"}

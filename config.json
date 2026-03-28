@@ -1,0 +1,17 @@
+{
+  "encryption": false,
+  "screenshot_interval": 120,
+  "enable_dashboard": true,
+  "dashboard_port": 5000,
+  "enable_camera": true,
+  "idle_minutes": 5,
+  "away_minutes": 15,
+  "enable_telegram": false,
+  "telegram_token": "",
+  "telegram_chat_id": "",
+  "auto_start_browser": false,
+  "silent_mode": true,
+  "keep_logs_days": 7,
+  "keep_screenshots_days": 3,
+  "max_storage_mb": 500
+}
